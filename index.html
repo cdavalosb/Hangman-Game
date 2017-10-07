@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Psychic Game </title>
+</head>
+
+
+<body>
+
+
+
+<header>
+   <h1>Phychic Game</h1>
+</header>
+  
+
+<script type="text/javascript">
+
+		var userNumber = 9; 
+		var counter = 0;
+		var MaxTries = 3;
+
+		var randomNumber = Math.floor(Math.random() * userNumber) +1;
+
+	while (Attempts != randomNumber ) {
+		var Attempts = prompt("Pick a number between 1 and " + userNumber);
+		counter += 1;
+
+	if (counter > MaxTries) {
+		document.write("You have no more tries. Press F5 to play again");  
+		break
+ 	}
+
+	if (Attempts == randomNumber) {
+		document.write("Game Over!");
+		document.write("<p> The random number is " + randomNumber + "</p>");
+	    document.write("<p> Number if attempts it took you " + counter + "to get the correct number</p>");
+
+	    console.log("program clean");
+	}
+}
+
+</script>
+</body>
